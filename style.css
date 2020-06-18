@@ -1,7 +1,144 @@
-.cell {
-    border: 1px solid gray;
-    min-width: 20px;
-    min-height: 20px;
+html, body {
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+html {
+    background: rgb(78, 0, 0);
+}
+
+#container {
+    background: white;
+    margin: 40px auto auto;
+    grid-area: container;
+    display: grid;
+    justify-self: center;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 20px rgb(212, 181, 1);
+    width: 40em;
+    height: 40em;
+}
+
+#container div {
+    border: 1px groove rgb(48, 48, 48);
+}
+
+div.btns {
+    padding: 0.35em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    content: center;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: 300;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+button#generate {
+    padding: 0.85em 1.2em;
+    border: 0.1em solid #FFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.20em;
+    content: center;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: 900;
+    text-align: center;
+    transition: all 0.2s;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+button#generate:hover {
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 5px 5px rgb(255, 255, 255);
+}
+
+button#eraser {
+    padding: 0.85em 1.2em;
+    border: 0.1em solid #FFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.20em;
+    content: center;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: 900;
+    text-align: center;
+    transition: all 0.2s;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+button#eraser:hover {
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 5px 5px rgb(255, 255, 255);
+}
+
+button#draw {
+    padding: 0.85em 1.2em;
+    border: 0.1em solid #FFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.20em;
+    content: center;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: 900;
+    text-align: center;
+    transition: all 0.2s;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+button#draw:hover {
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 5px 5px rgb(255, 255, 255);
+}
+
+button#randomColors {
+    padding: 0.85em 1.2em;
+    border: 0.1em solid #FFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.20em;
+    content: center;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: 900;
+    text-align: center;
+    transition: all 0.2s;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+button#randomColors:hover {
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 5px 5px rgb(255, 255, 255);
+}
+
+button#reset {
     display: inline-block;
-    margin-right: 2px;
+    padding: 0.85em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.20em;
+    content: center;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: 900;
+    text-align: center;
+    transition: all 0.2s;
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+button#reset:hover {
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 5px 5px rgb(255, 255, 255);
 }
